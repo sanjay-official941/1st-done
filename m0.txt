@@ -1,0 +1,48 @@
+To align an image to the left or right using only HTML and CSS, you can use the float property in CSS. Here's how you can do it:
+1. Align Image to the Left
+Html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left Align Image</title>
+  <style>
+    .left-align {
+      float: left;
+      margin-right: 10px; /* Optional: Adds space between the image and text */
+    }
+  </style>
+</head>
+<body>
+  <img src="example.jpg" alt="Example Image" class="left-align">
+  <p>This text will wrap around the image aligned to the left.</p>
+</body>
+</html>
+
+
+2. Align Image to the Right
+Html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Right Align Image</title>
+  <style>
+    .right-align {
+      float: right;
+      margin-left: 10px; /* Optional: Adds space between the image and text */
+    }
+  </style>
+</head>
+<body>
+  <img src="example.jpg" alt="Example Image" class="right-align">
+  <p>This text will wrap around the image aligned to the right.</p>
+</body>
+</html>
+
+
+3. Clearing the Float (Optional)
+If you want to stop the text from wrapping around the image after a certain point, you can use the clear property:
+Html<p style="clear: both;">This text will appear below the floated image.</p>
+
+These examples use modern CSS practices for better flexibility and compatibility.
